@@ -20,7 +20,7 @@ class VAbout extends StatelessWidget {
               "Material Icons Viewer",
               style: Theme.of(context).textTheme.headline,
             ),
-            Text("© Nobuhito SATO 2018"),
+            Text("© 2018 Nobuhito SATO"),
             WSpaceBox.height(16),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
