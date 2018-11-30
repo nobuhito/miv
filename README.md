@@ -1,5 +1,7 @@
 # miv
 
+![icon](doc/img/logo.64.png)
+
 Material Icons Viewer
 
 ![screen](doc/img/screen.gif)
