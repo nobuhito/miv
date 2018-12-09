@@ -181,10 +181,12 @@ class _MaterialIconsViewerState extends State<MaterialIconsViewer> {
                               (this.columnsWidthCurrent * update.scale).toInt();
                         });
                       },
-                      child: body(
-                        pageIndex: this.currentPageIndex,
-                        columnCount: columnCount,
-                        tabIndex: index,
+                      child: SafeArea(
+                        child: body(
+                          pageIndex: this.currentPageIndex,
+                          columnCount: columnCount,
+                          tabIndex: index,
+                        ),
                       ),
                     );
                   },
