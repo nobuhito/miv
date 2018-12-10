@@ -7,7 +7,7 @@ description: Material Icons Viewer
 # Both the version and the builder number may be overridden in flutter
 # build by specifying --build-name and --build-number, respectively.
 # Read more about versioning at semver.org.
-version: 0.9.2+902
+version: 0.9.3+903
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
@@ -32,6 +32,7 @@ dev_dependencies:
   flutter_launcher_icons: ^0.7.0
 
 flutter_icons:
+  image_path_ios: "icon/icon_ios.png"
   image_path: "icon/logo.png"
   android: true
   ios: true

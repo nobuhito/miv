@@ -18,9 +18,14 @@ class _VIconState extends State<VIcon> {
         title: Text(widget.icon.key),
         actions: <Widget>[
           IconButton(
-            icon: (widget.icon.favorite)
-                ? Icon(Icons.favorite)
-                : Icon(Icons.favorite_border),
+            icon: AnimatedCrossFade(
+              crossFadeState: (widget.icon.favorite)
+                  ? CrossFadeState.showFirst
+                  : CrossFadeState.showSecond,
+              duration: Duration(milliseconds: 500),
+              firstChild: Icon(Icons.favorite),
+              secondChild: Icon(Icons.favorite_border),
+            ),
             onPressed: () {
               setState(() {
                 widget.icon.toggleFavorite();
